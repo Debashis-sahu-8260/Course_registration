@@ -1,0 +1,203 @@
+/* Navbar logo size */
+.logo {
+    height: 40px;
+}
+.carousel {
+    height: 500px; /* Adjust this value as needed */
+    overflow: hidden; /* Ensures that content overflowing the carousel is hidden */
+}
+
+/* Ensure carousel images cover the entire height of the container */
+.carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Maintains aspect ratio while covering the container */
+    width: 100%; /* Ensures the image covers the full width */
+}
+
+
+/* Registration form padding */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Button style for form */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff; /* Match border color */
+}
+
+/* Add some margin to the form header */
+h1 {
+    margin-bottom: 20px;
+} .background-section {
+    position: relative;
+    background-image: url('https://img.freepik.com/free-photo/abstract-blurred-background_1232-2062.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 450px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.background-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with opacity for fade effect */
+    z-index: 1;
+}
+
+.background-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.background-section .left-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.background-section .registration-form {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.background-section h1 {
+    margin-bottom: 20px;
+}
+
+.background-section p {
+    font-size: 1.2rem;
+}
+
+
+
+.registration-form {
+    background: red;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    max-width: 400px;
+}
+
+.form-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+    font-size: 16px;
+    transition: border-color 0.3s;
+    height: 10%;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.form-message {
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+.accordion {
+    margin: 20px;
+    width:  98%;
+    /* border-radius: 8px; */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+    background-color: #adadad;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+    outline: none;
+    position: relative;
+}
+
+.accordion-button:hover {
+    background-color: #0056b3;
+}
+
+.accordion-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.accordion-content p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}

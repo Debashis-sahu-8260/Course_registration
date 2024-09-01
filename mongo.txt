@@ -1,0 +1,51 @@
+
+C:\Users\ASUS>mongosh
+Current Mongosh Log ID: 66d47bd907615f03d22710bb
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.0
+Using MongoDB:          7.0.14
+Using Mongosh:          2.3.0
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2024-09-01T20:02:52.468+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> use courseDB
+switched to db courseDB
+courseDB> db.createCollection("registrations")
+{ ok: 1 }
+courseDB> db.registrations.insertOne({ name: "John Doe", email: "john@example.com", course: "Web Development" })
+{
+  acknowledged: true,
+  insertedId: ObjectId('66d47c3a07615f03d22710bc')
+}
+courseDB> db.registrations.find().pretty()
+[
+  {
+    _id: ObjectId('66d47c3a07615f03d22710bc'),
+    name: 'John Doe',
+    email: 'john@example.com',
+    course: 'Web Development'
+  }
+]
+courseDB> show collections
+registrations
+courseDB>  db.registrations.find().pretty()
+[
+  {
+    _id: ObjectId('66d47c3a07615f03d22710bc'),
+    name: 'John Doe',
+    email: 'john@example.com',
+    course: 'Web Development'
+  },
+  {
+    _id: ObjectId('66d47dbeed270bcc02ddd19c'),
+    name: 'binod',
+    email: 'deba1@gmail.com',
+    course: 'Java',
+    __v: 0
+  }
+]
+courseDB>
